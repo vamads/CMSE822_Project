@@ -1,7 +1,7 @@
 Group Members: Vicente Amado Olivo and Yaqi Jie
 
 # Parallelizing Monte Carlo Methods for the TARDIS SN Package
-
+![status](./blabla/banner.png)
 ## Abstract:
 We will be using various parallelization techniques to speed up the Monte Carlo simulations in the TARDIS SN package. The TARDIS SN package is an open-source Monte Carlo radiative-transfer spectral synthesis code for 1D models of exploding stars (supernova ejecta)[1]. The Monte Carlo method tracks the random walk of a photon leaving the supernova ejecta. Both the initialization of the photons and their random walk through the supernova ejecta are modeled through probabilistic processes. In the TARDIS SN package the Monte Carlo method has been parallelized using numba (as TARDIS is written in python), however, Alerstam et. al. found that using GPU programming can speed up the computation substantially in a previous Monte Carlo study [2]. In this project, we will implement a simple Monte Carlo method and compare several techniques in python using jit and CUDA supported by numba[3]. We will develop a benchmark for the TARDIS SN collaborators to use when implementing the more complex radiative-transfer Monte Carlo simulations. 
 
